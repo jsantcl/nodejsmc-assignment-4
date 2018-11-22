@@ -6,17 +6,17 @@
 
 ### **User Creation**
 ### **-------------**
--Method: POST
--Endpoint: /users/
--Required Payload Data:
---name            string
---email           string
---password        string
---streetaddress   string
--Returned data:
---code        201 ( Object created)
---code        400 ( Error)
---code        500 ( Internal error)
+- Method: POST
+- Endpoint: /users/
+- Required Payload Data:
+-- name            string
+-- email           string
+-- password        string
+-- streetaddress   string
+- Returned data:
+-- code        201 ( Object created)
+-- code        400 ( Error)
+-- code        500 ( Internal error)
 
 ### **Query User Data**
 ### **---------------**
@@ -208,8 +208,8 @@
 --code      400 (not found)
 
 
-###**Order Query**
-###**-----------**
+### **Order Query**
+### **-----------**
 -Method: GET
 -Endpoint: /order/?{id=<cartid>}
 -Required Query String Data:
@@ -221,6 +221,6 @@
 --code      400 (not found)
 
 
-###**Worker Process**
-###**--------------**
+### **Worker Process**
+### **--------------**
 Worker process will send every 5 minutes an email for every order with payment status "true" and emailsent is false, also will update the "emailsent" field to true on successfull sent.
