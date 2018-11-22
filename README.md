@@ -9,14 +9,14 @@
 - Method: POST
 - Endpoint: /users/
 - Required Payload Data:
--- name            string
--- email           string
--- password        string
--- streetaddress   string
+  - name            string
+  - email           string
+  - password        string
+  - streetaddress   string
 - Returned data:
--- code        201 ( Object created)
--- code        400 ( Error)
--- code        500 ( Internal error)
+  - code        201 ( Object created)
+  - code        400 ( Error)
+  - code        500 ( Internal error)
 
 ### **Query User Data**
 ### **---------------**
