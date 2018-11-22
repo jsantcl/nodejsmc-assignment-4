@@ -1,11 +1,11 @@
 # nodejsmc-assignment-2
-##Nodejs Master Class Assignment #2
+## Nodejs Master Class Assignment #2
 
-#API Documentation
-#-----------------
+# API Documentation
+# -----------------
 
-###**User Creation**
-###**-------------**
+### **User Creation**
+### **-------------**
 -Method: POST
 -Endpoint: /users/
 -Required Payload Data:
@@ -18,8 +18,8 @@
 --code        400 ( Error)
 --code        500 ( Internal error)
 
-###**Query User Data**
-###**---------------**
+### **Query User Data**
+### **---------------**
 -Method: GET
 -Endpoint: /users/?{email=<email>}
 -Required Query String Data:
@@ -31,8 +31,8 @@
 --code        400 ( Object not found)
 --code        500 ( Internal error)
 
-###**User Update Data**
-###**----------------**
+### **User Update Data**
+### **----------------**
 -Method: PUT
 -Endpoint: /users/
 -Required Payload Data:
@@ -47,8 +47,8 @@
 --code      400 ( Not found)
 --code        500 ( Internal error)
 
-###**User Deletion**
-###**-------------**
+### **User Deletion**
+### **-------------**
 -Method: DELETE
 -Endpoint: /users/
 -Required Payload Data:
@@ -60,8 +60,8 @@
 --code      500 ( Internal error)
 --code      400 (Not found)
 
-###**User Login**
-###**----------**
+### **User Login**
+### **----------**
 -Method: POST
 -Endpoint: /login/
 -Required Payload Data:
@@ -72,8 +72,8 @@
 --code      400 ( Not found)
 --code      500 ( Internal error)
 
-###**User Logout**
-###**-----------**
+### **User Logout**
+### **-----------**
 -Method: DELETE
 -Endpoint: /logout/
 -Required Header Data:
@@ -83,8 +83,8 @@
 --code     500 (Internal error)
 --code     400 ( Not found) 
 
-###**Token Creation**
-###**--------------**
+### **Token Creation**
+### **--------------**
 -Method: POST
 -Endpoint: /tokens/
 -Required Payload Data:
@@ -95,8 +95,8 @@
 --code      500 (Internal error)
 --code      400 (not found)
 
-###**Token Query Data**
-###**----------------**
+### **Token Query Data**
+### **----------------**
 -Method: GET
 -Endpoint: /token/?{id=<token>}
 -Required Query String Data:
@@ -104,8 +104,8 @@
 -Returned data:
 --code      200 ( Object found) - token data: { emal, tokenid, expires}
 
-###**Token Update Data**
-###**-----------------**
+### **Token Update Data**
+### **-----------------**
 -Method: PUT
 -Endpoint: /token/
 -Required Payload Data:
@@ -115,8 +115,8 @@
 --code      200 (Object updated)
 --code      400 ( not found)
 
-###**Token Deletion**
-###**--------------**
+### **Token Deletion**
+### **--------------**
 -Method: DELETE
 -Endpoint: /token/?{id=<token>}
 -Required Query String Data:
@@ -126,8 +126,8 @@
 --code      400 (not found)
 --code      500 (internal error)
 
-###**Menu List**
-###**---------**
+### **Menu List**
+### **---------**
 -Method: GET
 -Endpoint: /menu/
 -Required Header Data:
@@ -137,8 +137,8 @@
 --code      400 (not found)
 --code      500 (internal error)
 
-###**Shopping Cart Creation**
-###**----------------------**
+### **Shopping Cart Creation**
+### **----------------------**
 -Method: POST
 -Endpoint: /cart/
 -Required Payload Data:
@@ -151,8 +151,8 @@
 --code      500 (Internal error)
 --code      400 (not found)
 
-###**Shopping Cart Query**
-###**-------------------**
+### **Shopping Cart Query**
+### **-------------------**
 -Method: GET
 -Endpoint: /cart/?{id=<cart id>}
 -Required Query String Data:
@@ -164,8 +164,8 @@
 --code      500 (Internal error)
 --code      400 (not found)
 
-###**Shopping Cart Update**
-###**--------------------**
+### **Shopping Cart Update**
+### **--------------------**
 -Method: PUT
 -Endpoint: /cart/
 -Required Payload Data:
@@ -177,8 +177,8 @@
 --code      500 (Internal error)
 --code      400 (not found)
 
-###**Shopping Cart Deletion**
-###**----------------------**
+### **Shopping Cart Deletion**
+### **----------------------**
 -Method: DELETE
 -Endpoint: /cart/?{id=<cart id>}
 -Required Query String Data:
@@ -191,8 +191,8 @@
 --code      500 (internal error)
 
 
-###**Order Creation**
-###**----------------**
+### **Order Creation**
+### **----------------**
 -Method: POST
 -Endpoint: /order/
 -Required Payload Data:
