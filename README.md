@@ -1,5 +1,5 @@
-# nodejsmc-assignment-2
-## Nodejs Master Class Assignment #2
+# nodejsmc-assignment-3
+## Nodejs Master Class Assignment #3
 
 # API Documentation
 # -----------------
