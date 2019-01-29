@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <!-- General settings-->
+        <meta charset="utf-8">
+        <meta http-equiv="content language" content="en-us">
+        <base href="{global.baseUrl}">
+        <title>{head.title} | {global.appName}</title>
+        <meta name="description" content="{head.description}">
+        <link type="image/x-icon" rel="icon" href="favicon.ico">
+        <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="public/app.css">
+    </head>
+<body class={body.class}>
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+
+<!-- Header -->
+    <div class="header">
+<!-- logo -->
+<a class="logo" href="/">
+    <img src="public/pizza.jpg" alt="Logo" />
+</a>
+<!-- menu -->
+<ul class="menu">
+    <li><a href="/">Home</a></li>
+    <li class="loggedOut"><a  href="/account/create">Sign Up</a></li>
+    <li class="loggedOut"><a  href="/session/create">Log In</a></li>    
+    <li class="loggedIn"><a href="/menu/list">Pizza Menu</a></li>
+    <li class="loggedIn"><a href="/cart/list">Pizza Cart</a></li>
+    <li class="loggedIn"><a href="/order/list/">Order</a></li>
+    <li class="loggedIn"><a href="/account/edit/">Account Settings</a></li>
+    <li class="loggedIn" ><a id="logoutButton" href="#">Logout</a></li>
+</ul>
+
+
+    </div>
+<!-- Page specific content-->
+<div class="content">
+
+

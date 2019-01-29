@@ -1,0 +1,50 @@
+<h1>Cart List</h1>
+<h2>Pizzas in Cart!</h2>
+<hr />
+
+<div class="cartWrapper">
+    <table id="cartListTable">
+      <tr>
+        <th>Item</th>
+        <th>Value</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+      </tr>
+      <tr id="noElementMessage">
+        <td colspan="4">There is no cart created</td>
+      </tr>
+    </table>
+  </div>
+
+    <div id="existCart" class="formWrapper">
+      <form id="cartDelete" action="/api/cart" method="DELETE">
+        <div class="formError"></div>
+        <input type="hidden" name="_method" value="DELETE"/>
+        <input class="hiddenEmailInput" type="hidden" name="email" />
+      <input type="hidden" class="hiddenCartIdInput" name="id">
+      <button type="submit" class="deleteCart">Delete</button>
+    </form>
+    </div>
+<hr/>
+
+  <div id="orderingCart" class="formWrapper">
+      <h2>Place Order</h2>
+    <form id="purchase" action="/api/order" method="POST">
+<div class="formError"></div>
+<input class="hiddenEmailInput" type="hidden" name="email">
+<input type="hidden" class="hiddenCartIdInput" name="cartid">
+<label for="creditcard">Credit Card Number</label>
+<input type="text" name="creditcard" id="" maxlength="16">
+<label for="expmonth">Expiration Month</label>
+<input type="text" name="expmonth" id="" maxlength="2">
+<label for="expyear">Expiration Year</label>
+<input type="text" name="expyear" id="" maxlength="4">
+<label for="cvv">CVV</label>
+<input type="text" name="cvv" id="" maxlength="3">
+<button type="submit" class="placeOrder">Place Order</button>
+<p>After successfull payment you'll redirected to your orders summary</p>
+    </form>
+  </div>
+<div id="createCart" class="ctaWrapper">
+  <a class="cta green" href="menu/list">Get to the menu!</a>
+</div>

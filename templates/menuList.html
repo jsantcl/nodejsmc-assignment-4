@@ -1,0 +1,29 @@
+<h1>Menu</h1>
+<h2>Select the pizzas of Yoour choice</h2>
+<hr />
+<div class="formWrapper">
+<form id="cartCreate" action="api/cart" method="POST">
+  <div class="formError"></div>
+  <div class="formSuccess">Cart Saved successfully, visit the pizza cart menu to complete your puchase</div> 
+  <div class="inputWrapper">
+      <input class="hiddenEmailInput"  type="hidden" name="email"/>
+    <table id="menuListTable">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Input Quantity</th>
+      </tr>
+      <tr id="noItemMessage">
+        <td colspan="5">There is no items available for the menu</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="inputWrapper">
+    <button type="submit" class="cta green">Add to Cart</button>
+  </div>
+</form>
+</div>
+
+
