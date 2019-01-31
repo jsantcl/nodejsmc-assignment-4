@@ -12,6 +12,8 @@ To launch the application use the command line:
 
 PAY_API_KEY=<stripe api key> MAIL_API_KEY=<mailgun api key> node index.js
 
+Enter URL http://localhost:3000
+
 How to Test
 - 1.- Log in to the app
 - 2.- You'll be redirected to the Menu Form
