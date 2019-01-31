@@ -13,16 +13,15 @@ To launch the application use the command line:
 PAY_API_KEY=<stripe api key> MAIL_API_KEY=<mailgun api key> node index.js
 
 How to Test
-1.- Log in to the app
-2.- You'll be redirected to the Menu Form
-3.- Fill in the quantity for the pizza of your choice
-4.- Click "Add to Cart" wait for the confirmation of success
-5.- Click "Pizza Cart" Menu
-6.- Here you might delete the cart (One cart per customer is allowed) and start over or fill in the credit card fake data 
+- 1.- Log in to the app
+- 2.- You'll be redirected to the Menu Form
+- 3.- Fill in the quantity for the pizza of your choice
+- 4.- Click "Add to Cart" wait for the confirmation of success
+- 5.- Click "Pizza Cart" Menu
+- 6.- Here you might delete the cart (One cart per customer is allowed) and start over or fill in the credit card fake data 
 (expiration year should be >= current year) Click on "Place Order"
-
-7.- On successfull payment you'll be redirected to the order summary page
-8.- Check Your email for the receipt!
+- 7.- On successfull payment you'll be redirected to the order summary page
+- 8.- Check Your email for the receipt!
 
 
 
