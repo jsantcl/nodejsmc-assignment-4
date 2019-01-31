@@ -359,10 +359,12 @@ app.loadDataOnPage = () => {
     app.loadMenuListPage();
   }
 
+  //Logic for cartlist page
   if(primaryClass == 'cartList') {
     app.loadCartListPage();
   }
 
+  //Logic for orders list page
   if(primaryClass == 'orderList') {
     app.loadOrderListPage();
   }
@@ -427,7 +429,7 @@ app.loadMenuListPage = () => {
     app.client.request(undefined,'api/menu','GET',queryStringObject,undefined, (statusCode,responsePayload) => {
       if(statusCode == 200){
 
-        // Determine how many checks the user has
+        // Determine how many items in the menu
         var allMenu = typeof(responsePayload) == 'object' && responsePayload instanceof Array && responsePayload.length > 0 ? responsePayload : [];
 
         // Put the hidden email field into both forms
@@ -438,7 +440,7 @@ app.loadMenuListPage = () => {
         
         if(allMenu.length > 0){
 
-          // Show each item on the menu
+          // Show each item on the menu, menu items are hardcoded
           allMenu.forEach( (item) => {
                 
                 var table = document.getElementById("menuListTable");
@@ -454,17 +456,9 @@ app.loadMenuListPage = () => {
                 td3.innerHTML = '<input class="quantity" type="text" name="' + item.id + '" placeholder="0" />';
           });
 
-          if(allMenu.length < 5){
-            // Show the createCheck CTA
-            document.getElementById("createCheckCTA").style.display = 'block';
-          }
-
         } else {
-          // Show 'you have no checks' message
-          document.getElementById("noChecksMessage").style.display = 'table-row';
-
-          // Show the createCheck CTA
-          document.getElementById("createCheckCTA").style.display = 'block';
+           // Show the createCheck CTA
+          document.getElementById("noElementMessage").style.display = 'block';
 
         }
       } else {
@@ -591,6 +585,7 @@ if(email){
             'id':order
           }
 
+          //request order data on each loop pass
           app.client.request(undefined, 'api/order','GET',queryStringObject, undefined, (statusCode, orderPayload)=>{
             if(statusCode == 200) {
               var itemsInOrder = typeof(orderPayload.items) == 'object' && orderPayload.items instanceof Array && orderPayload.items.length > 0 ? orderPayload.items : [];

@@ -15,7 +15,7 @@ app.init = ()=>{
     server.init();
 
     //start the workers
-    //workers.init();
+    workers.init();
 };
 
 
