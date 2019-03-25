@@ -255,6 +255,7 @@ Worker process will send every 5 minutes an email for every order with payment s
 
 # 3.- CLI Usage
 # -----------------
+- Display Help screen: help
 - View all the current menu items: menu
 - View all the recent orders in the system (orders placed in the last 24 hours): recent orders
 - Lookup the details of a specific order by order ID: order details --{orderid}
