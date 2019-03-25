@@ -1,9 +1,10 @@
-# nodejsmc-assignment-3
-## Nodejs Master Class Assignment #3
+# nodejsmc-assignment-4
+## Nodejs Master Class Assignment #4
 
 # Index
 # 1.- Web Client Reference
 # 2.- API Documentation
+# 3.- CLI Usage
 
 # 1.- Web Client Documentation
 # ----------------------------
@@ -250,3 +251,13 @@ How to Test
 ### **Worker Process**
 ### **--------------**
 Worker process will send every 5 minutes an email for every order with payment status "true" and emailsent is false, also will update the "emailsent" field to true on successfull sent.
+
+
+# 3.- CLI Usage
+# -----------------
+- View all the current menu items: menu
+- View all the recent orders in the system (orders placed in the last 24 hours): recent orders
+- Lookup the details of a specific order by order ID: order details --{orderid}
+- View all the users who have signed up in the last 24 hours: users new
+- Lookup the details of a specific user by email address: user details --{useremail}
+- Terminate the application: exit 
