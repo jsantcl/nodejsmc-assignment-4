@@ -16,6 +16,12 @@ PAY_API_KEY=<stripe api key> MAIL_API_KEY=<mailgun api key> node index.js
 Enter URL http://localhost:3000
 
 How to Test
+- 0.- In the same folder as index.js create the following folders
+- .data/
+- .data/users
+- .data/tokens
+- .data/carts
+- .data/orders  
 - 1.- Log in to the app
 - 2.- You'll be redirected to the Menu Form
 - 3.- Fill in the quantity for the pizza of your choice
